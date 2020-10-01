@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Mi API de Pokémon</title>
+</head>
+<body onload="generarAleatorios()">
+
+  <div class="header position-fixed-top">
+    <header class="bg-dark text-center MyHeader">
+        <h1 class="p-4">API Pokémon de Alejandra Villamil</h1>
+        
+        <ul class="nav justify-content-end">
+            <ul id="paginacion" class="pagination"></ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Rick & Morty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pókemon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Marvel</a>
+              </li>
+  
+          </ul>
+        
+    </header>
+</div>
+<div class="d-flex justify-content-center"><button onclick="cargar()" class="btn btn-dark m-3">Ver más</button></div>
+
+<!--Tarjetas de los personajes-->
+<div class="container position-relative">
+    <div id="datosPersonaje" class="row">
+
+    </div>
+</div>
+
+   <script src="../js/jquery-3.3.1.slim.min.js"></script> 
+   <script src="../js/popper.min.js"></script> 
+   <script src="../js/bootstrap.min.js"></script> 
+   <script src="../js/getPokemon.js"></script> 
+
+</body>
+</html>
